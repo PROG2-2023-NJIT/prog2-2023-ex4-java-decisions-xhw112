@@ -124,9 +124,9 @@ public class FlightBookingTest
         fb.setTotalTicketPrice();
 
         double returnedPrice = Math.abs(fb.getTotalTicketPrice());
-        double expectedPrice = Math.abs((((child *((300 + (0.1*300)) + (0.05*300))) + (adults*((300 + (0.1*300)) + (0.05*300)))) + 250)*2);
+        double expectedTicketPrice = 2* ((0*(300 + (0.15*300) + (0.1*300) + 250)) + (3*(300 + (0.15*300) + (0.1*300) + 250)));
 
-        if (returnedPrice == expectedPrice){
+        if (returnedPrice == expectedTicketPrice){
             assertEquals(1, 1);
         }
         else {
